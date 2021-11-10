@@ -8,11 +8,11 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="modal">
+    <div class="modal" id="modal_test">
         <div class="modal-content">
             <div class="modal-header">
               <h5>Encabezado</h5>
-              <button>x</button>
+              <button data-dismiss="#modal_test">X</button>
             </div>
             <div class="modal-body">
                Lorem ipsum dolor sit, amet consectetur adipisicing elit. A ut accusamus voluptas iure eligendi? Quae, ipsam? Tempore nemo esse nam, maxime hic, natus exercitationem asperiores perspiciatis ad dicta at velit.
@@ -23,7 +23,7 @@
                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro facere accusamus laborum nisi sit hic quisquam quos corporis! Aperiam voluptates, ut odio nisi alias voluptatem! Maiores error labore dolorum quod.
             </div>
             <div class="modal-footer">
-               <button class="btn btn-secondary">close</button>
+               <button class="btn btn-secondary" data-dismiss="#modal_test">close</button>
                <button class="btn btn-primary">Save changes</button>
             </div>
         </div>
@@ -32,5 +32,13 @@
     <div class="bg-primary">
         Hola mundo
     </div>
+
+    <button class="btn btn-success" data-toggle="modal" data-target="#modal_test">Abrir Modal 1</button>
+
+    <button class="btn btn-success" data-toggle="modal" data-target="#otro_modal">Abrir Modal 2</button>
+
+    <script src="js/framework.js">
+    </script>
+
 </body>
 </html>
